@@ -30,7 +30,6 @@ C4Context
 #### Explanations
 
 Here we have two main kind of users:
-
 * Customer : He can browse and create books
 * Administrator: He can create books and activate/deactivate the maintenance mode
 
@@ -100,7 +99,7 @@ Here is a summary of the stack used in this workshop for this architecture:
 | ISBN API | JAVA 17,Spring Boot 2.7.X |  |
 | Configuration Server | Spring Cloud Config 2021.0.4 |  |
 | Database | PostgreSQL |  |
-| Authorization Server | JAVA 17,Spring Boot 2.7.X, Spring Authorization Server 0.3.1 |  |
+| Authorization Server | JAVA 17,Spring Boot 2.7.X, Spring Authorization Server 0.4.0 |  |
 
 
 ### Customers
@@ -150,11 +149,24 @@ You must have set up these tools first:
 
 #### :rocket: If you don't want to bother with a local setup
 
+##### With Gitpod (recommended)
 You can use [Gitpod](https://gitpod.io).
 You must create an account first.
 You then can open this project in either your local VS Code or directly in your browser:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/alexandre-touret/rest-apis-versioning-workshop.git)
+
+##### With Github Codespaces
+You can also [use Github Codespaces](https://docs.github.com/en/codespaces/). 
+You can create a new one by [running "Code > Create codespace on main"](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
+
+You have then to run the command in the shell:
+
+```jshelllanguage
+pip install httpie
+sdk install java 17.0.5-tem
+sdk default java 17.0.5-tem
+```
 
 ## :boom: Ready ?
 
